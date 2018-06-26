@@ -17,7 +17,7 @@ repositories {
 Step 2. Add the dependency in the form
 ```
 dependencies { 
-    compile 'com.github.vikramhalder:ApiClient:1.0'
+    compile 'com.github.vikramhalder:ApiClient:1.0.0'
 }
 ```
 It is possible to build the latest commit on the master branch, for example :

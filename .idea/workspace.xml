@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9e9b8a0-57bd-464c-89cc-de1b871cb53c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/Data/Execute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Data/Execute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/Data/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Data/Files.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/Data/MultiPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Data/MultiPart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/Entity/ErrorParse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Entity/ErrorParse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/Entity/ErrorServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Entity/ErrorServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/Entity/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Entity/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/Entity/Headers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Entity/Headers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/Entity/Interface/GetError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Entity/Interface/GetError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/Entity/Interface/GetResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Entity/Interface/GetResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/Entity/Params.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Entity/Params.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/Entity/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Entity/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/GetApiMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/GetApiMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/PostApiMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/PostApiMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ml/vikisoft/ApiClient/PostFormData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/PostFormData.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +22,8 @@
       <file leaf-file-name="Example.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Example.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+            <state relative-caret-position="-731">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,24 +35,24 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="289">
-                <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+              <first_editor relative-caret-position="34">
+                <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="51" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+      <find>out.print</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\gradle\ApiClient\src\main</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -480,6 +458,7 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/PostApiMethod.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/PostFormData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Example.java" />
       </list>
     </option>
   </component>
@@ -492,7 +471,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1346" />
@@ -510,6 +489,11 @@
             <path>
               <item name="ApiClient" type="b2602c69:ProjectViewProjectNode" />
               <item name="ApiClient" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApiClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApiClient" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ApiClient" type="b2602c69:ProjectViewProjectNode" />
@@ -618,16 +602,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530011125728</updated>
-      <workItem from="1530011127369" duration="2360000" />
+      <workItem from="1530011127369" duration="3160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2360000" />
+    <option name="totallyTimeSpent" value="3160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -639,12 +622,13 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32843137" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.66993463" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34871408" />
       <window_info anchor="bottom" id="Build" weight="0.32843137" />
       <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Gradle" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -652,7 +636,6 @@
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -705,23 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/PostFormData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Example.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -729,11 +695,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/PostFormData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="56" column="42" lean-forward="true" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/classes/java/main/com/github/vikramhalder/ApiClient/GetApiMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#2265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/classes/java/main/com/github/vikramhalder/ApiClient/Example.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/vikramhalder/ApiClient/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-731">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="289">
-            <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <first_editor relative-caret-position="34">
+            <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="51" />
           </first_editor>
           <second_editor />
         </state>
