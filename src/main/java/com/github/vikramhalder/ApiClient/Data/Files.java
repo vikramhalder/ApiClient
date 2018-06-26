@@ -1,4 +1,4 @@
-package ml.vikisoft.ApiClient.Data;
+package com.github.vikramhalder.ApiClient.Data;
 
 import java.io.File;
 import java.io.IOException;

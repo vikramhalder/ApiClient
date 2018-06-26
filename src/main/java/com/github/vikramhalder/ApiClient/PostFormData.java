@@ -1,8 +1,9 @@
-package ml.vikisoft.ApiClient;
+package com.github.vikramhalder.ApiClient;
 
-import ml.vikisoft.ApiClient.Data.MultiPart;
-import ml.vikisoft.ApiClient.Entity.*;
-import ml.vikisoft.ApiClient.Entity.Interface.GetResponse;
+import com.github.vikramhalder.ApiClient.Data.MultiPart;
+import com.github.vikramhalder.ApiClient.Entity.*;
+import com.github.vikramhalder.ApiClient.Entity.Interface.GetResponse;
+import com.github.vikramhalder.ApiClient.Entity.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -45,7 +46,6 @@ public class PostFormData {
                         else{
                             multipart.addFilePart(files[0], new File(files[1]));
                         }
-                        System.out.println(files[0]);
                     }
                 }
             }

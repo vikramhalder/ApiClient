@@ -16,14 +16,14 @@ repositories {
 ```
 Step 2. Add the dependency in the form
 ```
-dependencies {
-    compile 'com.github.User:Repo:Tag'
+dependencies { 
+    compile 'com.github.vikramhalder:ApiClient:1.0'
 }
 ```
 It is possible to build the latest commit on the master branch, for example :
 ```
 dependencies {
-    compile 'com.github.jitpack:gradle-simple:master-SNAPSHOT'
+    compile 'com.github.vikramhalder:ApiClient:master-SNAPSHOT'
 }
 ```
  
@@ -31,10 +31,10 @@ dependencies {
 ## Running the tests
 
 ```
-import ml.vikisoft.ApiClient.Entity.ErrorParse;
-import ml.vikisoft.ApiClient.Entity.ErrorServer;
-import ml.vikisoft.ApiClient.Entity.Response;
-import ml.vikisoft.ApiClient.Entity.Interface.GetResponse;
+import ErrorParse;
+import ErrorServer;
+import Response;
+import GetResponse;
 
 public class Example {
     public static void main(String[] args){

@@ -1,8 +1,9 @@
-package ml.vikisoft.ApiClient;
+package com.github.vikramhalder.ApiClient;
 
-import ml.vikisoft.ApiClient.Data.Execute;
-import ml.vikisoft.ApiClient.Entity.*;
-import ml.vikisoft.ApiClient.Entity.Interface.GetResponse;
+import com.github.vikramhalder.ApiClient.Entity.*;
+import com.github.vikramhalder.ApiClient.Data.Execute;
+import com.github.vikramhalder.ApiClient.Entity.*;
+import com.github.vikramhalder.ApiClient.Entity.Interface.GetResponse;
 
 public class PostApiMethod {
     private String url="";

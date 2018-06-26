@@ -1,16 +1,21 @@
 apply plugin: 'java'
 apply plugin: 'application'
+group = 'com.github.vikramhalder'
 version='1.0'
+
+mainClassName = 'com.github.vikramhalder.ApiClient.Example'
+
 repositories {
     jcenter()
 }
-mainClassName = 'ml.vikisoft.ApiClient.Example'
+
 dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+
 jar {
     manifest {
-        attributes 'Main-Class': 'ml.vikisoft.ApiClient.Example'
+        attributes 'Main-Class': 'com.github.vikramhalder.ApiClient.Example'
     }
 }

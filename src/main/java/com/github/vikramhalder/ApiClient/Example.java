@@ -1,12 +1,12 @@
-package ml.vikisoft.ApiClient;
-import ml.vikisoft.ApiClient.Entity.ErrorParse;
-import ml.vikisoft.ApiClient.Entity.ErrorServer;
-import ml.vikisoft.ApiClient.Entity.Response;
-import ml.vikisoft.ApiClient.Entity.Interface.GetResponse;
+package com.github.vikramhalder.ApiClient;
+import com.github.vikramhalder.ApiClient.Entity.Response;
+import com.github.vikramhalder.ApiClient.Entity.ErrorParse;
+import com.github.vikramhalder.ApiClient.Entity.ErrorServer;
+import com.github.vikramhalder.ApiClient.Entity.Interface.GetResponse;
 
 public class Example {
     public static void main(String[] args){
-        new GetApiMethod()
+        /*new GetApiMethod()
                 .setUrl("http://localhost/test.php")
                 .setParams("id","1")
                 .setParams("language","en-GB")
@@ -74,6 +74,6 @@ public class Example {
                         if(errorServer!=null)
                             System.out.print(errorServer.getCode());
                     }
-                });
+                });*/
     }
 }

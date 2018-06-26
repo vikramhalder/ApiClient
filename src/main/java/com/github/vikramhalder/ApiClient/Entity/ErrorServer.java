@@ -1,6 +1,6 @@
-package ml.vikisoft.ApiClient.Entity;
+package com.github.vikramhalder.ApiClient.Entity;
 
-public class ErrorParse {
+public class ErrorServer {
     private int code;
     private boolean error;
     private String message;

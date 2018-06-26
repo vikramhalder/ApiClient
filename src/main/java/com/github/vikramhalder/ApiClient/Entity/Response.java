@@ -1,7 +1,6 @@
-package ml.vikisoft.ApiClient.Entity;
+package com.github.vikramhalder.ApiClient.Entity;
 
 import java.util.List;
-import java.util.Map;
 
 public class Response {
     private int code;

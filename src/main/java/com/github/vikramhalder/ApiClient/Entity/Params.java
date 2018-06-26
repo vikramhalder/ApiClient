@@ -1,4 +1,4 @@
-package ml.vikisoft.ApiClient.Entity;
+package com.github.vikramhalder.ApiClient.Entity;
 
 import java.util.ArrayList;
 

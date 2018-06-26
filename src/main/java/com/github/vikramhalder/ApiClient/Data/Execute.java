@@ -1,9 +1,9 @@
-package ml.vikisoft.ApiClient.Data;
+package com.github.vikramhalder.ApiClient.Data;
 
-import ml.vikisoft.ApiClient.Entity.Header;
-import ml.vikisoft.ApiClient.Entity.Headers;
-import ml.vikisoft.ApiClient.Entity.Params;
-import ml.vikisoft.ApiClient.Entity.Response;
+import com.github.vikramhalder.ApiClient.Entity.Headers;
+import com.github.vikramhalder.ApiClient.Entity.Params;
+import com.github.vikramhalder.ApiClient.Entity.Response;
+import com.github.vikramhalder.ApiClient.Entity.Header;
 
 import java.io.*;
 import java.net.HttpURLConnection;
