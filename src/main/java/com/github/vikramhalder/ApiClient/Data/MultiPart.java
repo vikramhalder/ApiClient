@@ -1,11 +1,15 @@
 package com.github.vikramhalder.ApiClient.Data;
 
+import com.github.vikramhalder.ApiClient.Entity.Header;
 import com.github.vikramhalder.ApiClient.Entity.Headers;
 import com.github.vikramhalder.ApiClient.Entity.Response;
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class MultiPart {
     private HttpURLConnection httpConn;
@@ -110,6 +114,16 @@ public class MultiPart {
                 while ((line = responseStreamReader.readLine()) != null) {
                     stringBuilder.append(line).append("\n");
                 }
+
+                List<Header> headerList=new ArrayList<>();
+                Map<String, List<String>> map = httpConn.getHeaderFields();
+                for (Map.Entry<String, List<String>> entry : map.entrySet()) {
+                    Header header=new Header();
+                    header.setName(entry.getKey());
+                    header.setValue(""+entry.getValue());
+                    headerList.add(header);
+                }
+
                 responseStreamReader.close();
 
                 response.setCode(status);

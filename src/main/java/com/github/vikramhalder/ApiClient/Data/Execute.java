@@ -65,7 +65,7 @@ public class Execute {
                 for (Map.Entry<String, List<String>> entry : map.entrySet()) {
                     Header header=new Header();
                     header.setName(entry.getKey());
-                    header.setValue(String.join(",", entry.getValue()));
+                    header.setValue(""+entry.getValue());
                     headerList.add(header);
                 }
                 response.setHeaders(headerList);
@@ -124,7 +124,7 @@ public class Execute {
                     for (Map.Entry<String, List<String>> entry : map.entrySet()) {
                         Header header=new Header();
                         header.setName(entry.getKey());
-                        header.setValue(String.join(",", entry.getValue()));
+                        header.setValue(""+entry.getValue());
                         headerList.add(header);
                     }
                     response.setHeaders(headerList);
