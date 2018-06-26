@@ -8,12 +8,6 @@ mainClassName = 'com.github.vikramhalder.ApiClient.Example'
 repositories {
     jcenter()
 }
-
-dependencies {
-    testCompile 'junit:junit:4.12'
-}
-
-
 jar {
     manifest {
         attributes 'Main-Class': 'com.github.vikramhalder.ApiClient.Example'

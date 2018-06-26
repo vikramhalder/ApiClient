@@ -6,7 +6,7 @@ import com.github.vikramhalder.ApiClient.Entity.Interface.GetResponse;
 
 public class Example {
     public static void main(String[] args){
-        /*new GetApiMethod()
+        new GetApiMethod()
                 .setUrl("http://localhost/test.php")
                 .setParams("id","1")
                 .setParams("language","en-GB")
@@ -74,6 +74,6 @@ public class Example {
                         if(errorServer!=null)
                             System.out.print(errorServer.getCode());
                     }
-                });*/
+                });
     }
 }
