@@ -4,7 +4,9 @@ group = 'com.github.vikramhalder'
 version='1.0.0'
 
 mainClassName = 'com.github.vikramhalder.ApiClient.Example'
-
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
 repositories {
     jcenter()
 }
