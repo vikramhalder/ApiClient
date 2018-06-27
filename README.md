@@ -11,10 +11,9 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 
 Step 1. Add the JitPack repository to your build file Add it in your build.gradle at the end of repositories:
-```
-allprojectsgroovy {
-    repositories {
-        ......
+```groovy
+allprojects {
+    repositories { 
         maven { url "https://jitpack.io" }
     }
 }
