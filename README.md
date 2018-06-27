@@ -1,4 +1,4 @@
-<img src="https://lh3.google.com/u/0/d/1sZxKlvbCXCBbPwLSBVhwAzlc4axXv-Vp=w1366-h654-iv1" title=""/>
+<img src="apiclient.svg" title=""/>
 
 # ApiClient
 
