@@ -9,6 +9,9 @@ public class PostApiMethod {
     private String url="";
     private Params params=new Params();
     private Headers headers =new Headers();
+    private int connectTimeout=30000;
+    private int readTimeout=35000;
+    private boolean printStackTrace=false;
 
     public PostApiMethod setUrl(String url) {
         this.url = url;
@@ -22,9 +25,21 @@ public class PostApiMethod {
         this.headers.add(name,value);
         return this;
     }
+    public PostApiMethod setConnectTimeout(int connectTimeout){
+        this.connectTimeout=connectTimeout*1000;
+        return this;
+    }
+    public PostApiMethod setReadTimeout(int readTimeout){
+        this.readTimeout=readTimeout*1000;
+        return this;
+    }
+    public PostApiMethod setPrintStackTrace(boolean printStackTrace){
+        this.printStackTrace=printStackTrace;
+        return this;
+    }
 
     public void execute(GetResponse callback){
-         Response res=new Execute().executePostMethod(url,params, headers);
+         Response res=new Execute().executePostMethod(url,params, headers,connectTimeout,readTimeout,printStackTrace);
          if(res.isError()){
              if(res.getCode()>201) {
                  ErrorServer errorServer = new ErrorServer();

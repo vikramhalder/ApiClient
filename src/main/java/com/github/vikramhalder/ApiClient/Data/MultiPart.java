@@ -1,5 +1,6 @@
 package com.github.vikramhalder.ApiClient.Data;
 
+import com.github.vikramhalder.ApiClient.Entity.Config;
 import com.github.vikramhalder.ApiClient.Entity.Header;
 import com.github.vikramhalder.ApiClient.Entity.Headers;
 import com.github.vikramhalder.ApiClient.Entity.Response;
@@ -18,18 +19,22 @@ public class MultiPart {
     private final String crlf = "\r\n";
     private final String twoHyphens = "--";
     private PrintWriter writer;
+    private boolean printStackTrace;
     /**
      *
      * @param requestURL
      * @param headers
      * @throws IOException
      */
-    public MultiPart(String requestURL,Headers headers) throws IOException {
+    public MultiPart(String requestURL,Headers headers, int connectTimeout,int readTimeout,boolean printStackTrace) throws IOException {
+        this.printStackTrace=printStackTrace;
         URL url = new URL(requestURL);
         httpConn = (HttpURLConnection) url.openConnection();
         httpConn.setUseCaches(false);
         httpConn.setDoOutput(true); // indicates POST method
         httpConn.setDoInput(true);
+        httpConn.setConnectTimeout(connectTimeout);
+        httpConn.setReadTimeout(readTimeout);
 
         httpConn.setRequestMethod("POST");
         if(headers !=null) {
@@ -131,16 +136,24 @@ public class MultiPart {
                 response.setData(stringBuilder.toString());
                 httpConn.disconnect();
             } else {
-                response.setCode(status);
+                response.setCode(httpConn.getResponseCode());
                 response.setError(true);
-                response.setMessage("Server returned non-OK status: " + status);
+                response.setMessage("Server Error");
+                for(Map.Entry m:Config.errorList().entrySet()){
+                    if(httpConn.getResponseCode()==(int)m.getKey())
+                        response.setMessage(""+m.getValue());
+                }
                 httpConn.disconnect();
             }
         }catch (IOException io){
+            if(printStackTrace)
+                io.printStackTrace();
             response.setCode(0);
             response.setError(true);
             response.setMessage(io.toString());
         }catch (Exception ex){
+            if(printStackTrace)
+                ex.printStackTrace();
             response.setCode(0);
             response.setError(true);
             response.setMessage(ex.toString());

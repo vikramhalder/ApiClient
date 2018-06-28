@@ -15,25 +15,42 @@ public class PostFormData {
     private Params params=new Params();
     private Headers headers =new Headers();
     private List<String[]> filepart=new ArrayList<>();
+    private int connectTimeout=30000;
+    private int readTimeout=35000;
+    private boolean printStackTrace=false;
+
     public PostFormData setUrl(String url) {
         this.url = url;
         return this;
     }
-    public PostFormData setParams(String name, String value){
-        this.params.add(name,value);
+    public PostFormData setParams(String param_name, String param_value){
+        this.params.add(param_name,param_value);
         return this;
     }
-    public PostFormData setHeaders(String name, String value){
-        this.headers.add(name,value);
+    public PostFormData setHeaders(String param_name, String param_value){
+        this.headers.add(param_name,param_value);
         return this;
     }
     public PostFormData addFilePart(String param_name, String file_path){
         filepart.add(new String[]{param_name,file_path});
         return this;
     }
+    public PostFormData setConnectTimeout(int connectTimeout){
+        this.connectTimeout=connectTimeout*1000;
+        return this;
+    }
+    public PostFormData setReadTimeout(int readTimeout){
+        this.readTimeout=readTimeout*1000;
+        return this;
+    }
+    public PostFormData setPrintStackTrace(boolean printStackTrace){
+        this.printStackTrace=printStackTrace;
+        return this;
+    }
+
     public void execute(GetResponse callback){
         try {
-            MultiPart multipart = new MultiPart(url,headers);
+            MultiPart multipart = new MultiPart(url,headers,connectTimeout,readTimeout,printStackTrace);
             /**
              * add File path
              */

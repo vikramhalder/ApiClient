@@ -1,20 +1,18 @@
 package com.github.vikramhalder.ApiClient.Data;
 
-import com.github.vikramhalder.ApiClient.Entity.Headers;
-import com.github.vikramhalder.ApiClient.Entity.Params;
-import com.github.vikramhalder.ApiClient.Entity.Response;
-import com.github.vikramhalder.ApiClient.Entity.Header;
+import com.github.vikramhalder.ApiClient.Entity.*;
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 public class Execute {
-    public Response executeGetMethod(String base_url, Params params, Headers headers){
+    public Response executeGetMethod(String base_url, Params params, Headers headers,int connectTimeout,int readTimeout,boolean printStackTrace){
         Response response=new Response();
         if(params!=null) {
             try {
@@ -51,6 +49,8 @@ public class Execute {
                                 urlConnection.setRequestProperty(head[0],"");
                 }
             }
+            urlConnection.setConnectTimeout(connectTimeout);
+            urlConnection.setReadTimeout(readTimeout);
             if (urlConnection.getResponseCode() == 200) {
                 BufferedReader in = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
                 StringBuilder sb = new StringBuilder();
@@ -75,9 +75,16 @@ public class Execute {
             }else {
                 response.setCode(urlConnection.getResponseCode());
                 response.setError(true);
-                response.setMessage("server error");
+                response.setMessage("Server Error");
+                for(Map.Entry m:Config.errorList().entrySet()){
+                    if(urlConnection.getResponseCode()==(int)m.getKey())
+                        response.setMessage(""+m.getValue());
+                }
             }
-        }catch (Exception ex){
+        }
+        catch (Exception ex){
+            if(printStackTrace)
+                ex.printStackTrace();
             response.setCode(0);
             response.setError(true);
             response.setMessage(ex.toString());
@@ -85,13 +92,15 @@ public class Execute {
         return response;
     }
 
-    public Response executePostMethod(String base_url, Params params, Headers headers){
+    public Response executePostMethod(String base_url, Params params, Headers headers, int connectTimeout,int readTimeout,boolean printStackTrace){
         Response response=new Response();
         try {
             URL url = new URL(base_url);
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setRequestMethod("POST");
             urlConnection.setDoOutput(true);
+            urlConnection.setConnectTimeout(connectTimeout);
+            urlConnection.setReadTimeout(readTimeout);
             if(headers !=null) {
                 for (String[] head : headers.getHeaders()) {
                     if (head != null)
@@ -134,7 +143,11 @@ public class Execute {
                 } else {
                     response.setCode(urlConnection.getResponseCode());
                     response.setError(true);
-                    response.setMessage("server error");
+                    response.setMessage("Server Error");
+                    for(Map.Entry m:Config.errorList().entrySet()){
+                        if(urlConnection.getResponseCode()==(int)m.getKey())
+                            response.setMessage(""+m.getValue());
+                    }
                 }
             }else {
                 response.setCode(0);
@@ -142,6 +155,8 @@ public class Execute {
                 response.setMessage((String) objects[1]);
             }
         } catch (Exception ex) {
+            if(printStackTrace)
+                ex.printStackTrace();
             response.setCode(0);
             response.setError(true);
             response.setMessage(ex.toString());
