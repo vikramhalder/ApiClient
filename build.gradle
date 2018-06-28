@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 group = 'com.github.vikramhalder'
-version='1.0.0'
+version '1.0.0'
 
 mainClassName = 'com.github.vikramhalder.ApiClient.Example'
 dependencies {
