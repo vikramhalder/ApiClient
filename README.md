@@ -21,7 +21,7 @@ allprojects {
 Step 2. Add the dependency in the form
 ```groovy
 dependencies { 
-    compile 'com.github.vikramhalder:ApiClient:master-SNAPSHOT'
+    compile 'com.github.vikramhalder:ApiClient:1.0.0'
 }
 ```
  or 
